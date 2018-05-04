@@ -7,6 +7,20 @@
   <title>观察者模式和订阅者模式</title>
 </head>
 <body>
-  
+  <h3>观察者设计模式:</h3>
+  <p>观察者模式 在软件设计中是一个对象，维护一个依赖列表，当任何状态发生改变自动通知它们。</p>
+  <img src="https://cdn-images-1.medium.com/max/1600/1*s1kclXywIwae86iNa7cKZQ.png" alt="观察者模式">
+  <h3>发布-订阅设计模式</h3>
+  <p>在发布-订阅模式，消息的发送方，叫做发布者（publishers），消息不会直接发送给特定的接收者，叫做订阅者。</p>
+  <img src="https://cdn-images-1.medium.com/max/1600/1*-GHFC93E4ODwNc98IE5_vA.gif" alt="发布订阅模式">
+  <h3>区别</h3>
+  <img src="https://user-gold-cdn.xitu.io/2017/11/22/15fe1b1f174cd376?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="区别">
+  <ul>
+    <li>在观察者模式中，观察者是知道Subject的，Subject一直保持对观察者进行记录。然而，在发布订阅模式中，发布者和订阅者不知道对方的存在。它们只有通过消息代理进行通信。</li>
+    <li>在发布订阅模式中，组件是松散耦合的，正好和观察者模式相反。</li>
+    <li>观察者模式大多数时候是同步的，比如当事件触发，Subject就会去调用观察者的方法。而发布-订阅模式大多数时候是异步的（使用消息队列）。</li>
+    <li>观察者模式需要在单个应用程序地址空间中实现，而发布-订阅更像交叉应用模式。</li>
+  </ul>
+  <p>尽管它们之间有区别，但有些人可能会说发布-订阅模式是观察者模式的变异，因为它们概念上是相似的。</p>
 </body>
 </html>
